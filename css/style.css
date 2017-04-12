@@ -1,0 +1,126 @@
+div.big-container {
+    margin: 1em auto;
+    max-width: 600px;
+}
+
+@media (max-width: 600px) {
+    div.big-container {
+        margin: 1em;
+    }
+}
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Roboto", sans-serif !important;
+    color: #212121;
+    background: white;
+    overflow: scroll;
+}
+
+nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+nav button {
+    width: 300px;
+    padding: 12px 0px;
+}
+
+#summon {
+    margin-right: 12px;
+}
+
+button {
+    padding: 12px 24px;
+    color: white;
+    background: #3F51B5;
+    border: 0px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.14), 0px 3px 8px 0px rgba(33,33,33,0.15);
+    text-transform: uppercase;
+    font-family: Roboto, Helvetica, sans-serif;
+    border-radius: 3px;
+    -webkit-transition: all ease 200ms;
+    transition: all ease 200ms;
+}
+
+button:hover {
+    box-shadow: 0px 4px 8px 0px rgba(33,33,33,0.14), 0px 5px 10px 0px rgba(33,33,33,0.15);
+    background: #5F71D5;
+}
+
+button:focus {
+    outline: none;
+}
+
+#jalupLevel,
+#waniLevel {
+    width: 70px;
+}
+
+#jalup-controls,
+#wani-controls {
+    display: none;
+    max-width: 100%;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+main .division {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+main .division .item {
+    display: block;
+    padding: .2em;
+    margin: .2em;
+}
+
+.item {
+    color: #333;
+}
+
+.matched {
+    color: #1976D2;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#jalupLevel,
+#waniLevel {
+    line-height: 2;
+    padding: 0 1em;
+    border: 0;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px 0px rgba(33,33,33,0.3) inset;
+    font-weight: 600;
+    border-radius: 3px;
+    outline: none;
+    background: #f2f2f2;
+}
+
+p.label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2;
+}
